@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .animated-photo {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .animated-photo:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="photo-container">
+    <img src="./Screenshot 2024-02-24 212710.png" alt="">
+  </div>
+</body>
+</html>
