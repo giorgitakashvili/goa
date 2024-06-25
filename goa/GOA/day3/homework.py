@@ -1,0 +1,14 @@
+dedis_asaki=int(input())
+mamis_asaki=int(input())
+papis_asaki=int(input())
+bebos_asaki=int(input())
+dzma1_asaki=int(input())
+dzma2_asaki=int(input())
+chemi_asaki=int(input())
+dedis_asaki+=20
+mamis_asaki+=20
+papis_asaki+=20
+bebos_asaki+=20
+dzma1_asaki+=20
+dzma2_asaki+=20
+chemi_asaki+=20

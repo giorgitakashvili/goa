@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+</head>
+<body>
+    <img src="images/image1.jpg" id="imageDisplay" alt="Image 1">
+    <br>
+    <button onclick="previousImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+
+    <script>
+        var currentImageIndex = 0;
+        var images = ["images/image1.jpg", "images/image2.jpg"]; // Paths to the images
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById("imageDisplay").src = images[currentImageIndex];
+        }
+
+        function previousImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            document.getElementById("imageDisplay").src = images[currentImageIndex];
+        }
+    </script>
+</body>
+</html>
