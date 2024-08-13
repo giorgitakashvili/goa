@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,3 +18,24 @@
     <button id="colorButton" onclick="changeColor()">Change Color</button>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color Button</title>
+    <script>
+        function changeColor() {
+            var button = document.getElementById("colorButton");
+            var colors = ["red", "blue", "green", "yellow", "orange", "purple"]; // Array of colors
+            var randomColor = colors[Math.floor(Math.random() * colors.length)]; // Randomly select a color
+            button.style.backgroundColor = randomColor; // Change button color
+        }
+    </script>
+</head>
+<body>
+    <button id="colorButton" onclick="changeColor()">Change Color</button>
+</body>
+</html>
+>>>>>>> bc13ad1f9000be1e2a8d102663d23ed5e789582b

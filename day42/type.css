@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: black;
     text-align: center;
@@ -19,3 +20,26 @@ p{
 h6{
     color: yellow;
 }
+=======
+body{
+    background-color: black;
+    text-align: center;
+}
+div{
+    width: 200px;
+    height: 300px;
+    background-color:black;
+    text-align: center;
+}
+button{
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+p{
+    color: white;
+}
+h6{
+    color: yellow;
+}
+>>>>>>> bc13ad1f9000be1e2a8d102663d23ed5e789582b

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arithmetic Operations</h1>
+    <p>Click the button below to enter numbers and perform arithmetic operations.</p>
+    <button onclick="performArithmetic()">Calculate</button>
+
+    <script>
+        function performArithmetic() {
+            // Prompt the user for two numbers
+            let num1 = parseFloat(prompt("Enter the first number:"));
+            let num2 = parseFloat(prompt("Enter the second number:"));
+
+            // Check if the inputs are valid numbers
+            if (isNaN(num1) || isNaN(num2)) {
+                console.log("Invalid input. Please enter valid numbers.");
+                return;
+            }
+
+            // Perform arithmetic operations
+            let sum = num1 + num2;
+            let difference = num1 - num2;
+            let product = num1 * num2;
+            let quotient = num1 / num2;
+            let remainder = num1 % num2;
+
+            // Log the results to the console
+            console.log(`The sum of ${num1} and ${num2} is: ${sum}`);
+            console.log(`The difference between ${num1} and ${num2} is: ${difference}`);
+            console.log(`The product of ${num1} and ${num2} is: ${product}`);
+            console.log(`The quotient of ${num1} divided by ${num2} is: ${quotient}`);
+            console.log(`The remainder of ${num1} divided by ${num2} is: ${remainder}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,3 +57,63 @@
     
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Block Customizer</title>
+    <link rel="stylesheet" href="nieqf.css">
+    <style>
+        .custom-div {
+            width: 200px; /* Default width */
+            height: 200px; /* Default height */
+            border: 2px solid black;
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <label for="colorInput">Color:</label>
+    <input type="text" id="colorInput"><br><br>
+
+    <label for="widthInput">Width:</label>
+    <input type="number" id="widthInput"><br><br>
+
+    <label for="heightInput">Height:</label>
+    <input type="number" id="heightInput"><br><br>
+
+    <label for="textInput">Text:</label>
+    <input type="text" id="textInput"><br><br>
+
+    <button onclick="applyStyles()">Apply Information</button><br><br>
+
+    <div class="custom-div" id="customDiv">
+        <p id="customText">Custom Text</p>
+    </div>
+
+    <script>
+        function applyStyles() {
+            var color = document.getElementById("colorInput").value;
+            var width = document.getElementById("widthInput").value;
+            var height = document.getElementById("heightInput").value;
+            var text = document.getElementById("textInput").value;
+
+            var customDiv = document.getElementById("customDiv");
+            var customText = document.getElementById("customText");
+
+            customDiv.style.backgroundColor = color;
+            customDiv.style.width = width + "px";
+            customDiv.style.height = height + "px";
+            customText.textContent = text;
+        }
+    </script>
+    
+</body>
+</html>
+>>>>>>> bc13ad1f9000be1e2a8d102663d23ed5e789582b
